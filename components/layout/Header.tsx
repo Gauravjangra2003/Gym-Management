@@ -36,7 +36,7 @@ const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-[#050608] text-white backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-[#050608] backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5 md:px-10 lg:px-16">
         <Image src={Logo} alt="image not found" className="bg-black w-22 h-16" />
         <div className="hidden items-center gap-6 md:flex">
