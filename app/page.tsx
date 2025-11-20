@@ -1,6 +1,7 @@
 import Header from "@/components/layout/Header";
 import GymStatics from "@/components/sections/GymStatics";
 import HeroSection from "@/components/sections/HeroSection";
+import Training from "@/components/sections/Training";
 
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
               <main className="relative mx-auto flex max-w-6xl flex-col gap-12 px-6 pb-24 pt-16 md:px-10 lg:px-16">
                   <HeroSection />
                   <GymStatics />
+                  <Training />
               </main>
         </div>
     </div>
