@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState } from "react";
 
 const pricingPlans = {
   monthly: [
@@ -70,7 +70,10 @@ const pricingPlans = {
 export default function PricingSection() {
   const [switchPlan, setSwitchPlan] = useState("monthly");
 
-  const plans = useMemo(() => pricingPlans[switchPlan], [switchPlan]);
+//   console.log('rendering')
+
+  const plans = pricingPlans[switchPlan];
+
 
   return (
     <section className="space-y-8">
@@ -87,18 +90,26 @@ export default function PricingSection() {
         </p>
       </div>
 
-      {/* Toggle Buttons */}
+      {/* Toggle Button*/}
       <div className="flex justify-center rounded-full border border-white/10 bg-white/5 p-1 text-sm font-semibold">
         <button
           onClick={() => setSwitchPlan("monthly")}
-       
+         className={`w-1/2 rounded-full px-4 py-2 transition ${
+            switchPlan === "monthly"
+              ? "bg-white text-black"
+              : "text-zinc-400 hover:text-white"
+          }`}
         >
           Monthly
         </button>
 
         <button
           onClick={() => setSwitchPlan("yearly")}
-        
+          className={`w-1/2 rounded-full px-4 py-2 transition ${
+            switchPlan === "yearly"
+              ? "bg-white text-black"
+              : "text-zinc-400 hover:text-white"
+          }`}
         >
           Yearly
         </button>
