@@ -1,6 +1,7 @@
 import Header from "@/components/layout/Header";
 import GymStatics from "@/components/sections/GymStatics";
 import HeroSection from "@/components/sections/HeroSection";
+import Plans from "@/components/sections/Plans";
 import Training from "@/components/sections/Training";
 
 
@@ -15,6 +16,7 @@ export default function Home() {
                   <HeroSection />
                   <GymStatics />
                   <Training />
+                  <Plans />
               </main>
         </div>
     </div>
