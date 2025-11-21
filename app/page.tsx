@@ -1,7 +1,9 @@
+import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 import GymStatics from "@/components/sections/GymStatics";
 import HeroSection from "@/components/sections/HeroSection";
 import Plans from "@/components/sections/Plans";
+// import Trainers from "@/components/sections/Trainers";
 import Training from "@/components/sections/Training";
 
 
@@ -17,8 +19,10 @@ export default function Home() {
                   <GymStatics />
                   <Training />
                   <Plans />
+                  {/* <Trainers /> */}
               </main>
         </div>
+        <Footer />
     </div>
   );
 }
