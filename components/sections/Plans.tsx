@@ -73,7 +73,7 @@ interface sectionprops {
 
 
 export default function PricingSection({id} : sectionprops) {
-  const [switchPlan, setSwitchPlan] = useState("monthly");
+  const [switchPlan, setSwitchPlan] = useState<"monthly" | "yearly">(("monthly");
 
 //   console.log('rendering')
 
