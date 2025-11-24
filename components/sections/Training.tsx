@@ -47,7 +47,7 @@ const programs = [
   },
 ];
 
-const Training = () => {
+const Training = ({id}) => {
 
     const [active, setactive] = useState(0);
 
@@ -59,7 +59,7 @@ const Training = () => {
   }, []);
 
   return (
-    <div className="grid gap-10 lg:grid-cols-2">
+    <div id={id} className="grid gap-10 lg:grid-cols-2">
         {/* Festures section */}
         <div className="space-y-6 rounded-3xl border border-white/10 bg-linear-to-br from-zinc-900/70 to-black/40 p-10 backdrop-blur">
                 <p className="text-sm font-semibold uppercase tracking-[0.3em] text-orange-300">

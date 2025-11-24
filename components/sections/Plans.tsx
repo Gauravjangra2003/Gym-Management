@@ -67,7 +67,7 @@ const pricingPlans = {
   ],
 };
 
-export default function PricingSection() {
+export default function PricingSection({id}) {
   const [switchPlan, setSwitchPlan] = useState("monthly");
 
 //   console.log('rendering')
@@ -76,7 +76,7 @@ export default function PricingSection() {
 
 
   return (
-    <section className="space-y-8">
+    <section id={id} className="space-y-8">
       <div className="flex flex-col gap-3 text-center">
         <p className="text-sm font-semibold uppercase tracking-[0.3em] text-orange-300">
           Memberships

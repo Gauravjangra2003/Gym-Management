@@ -20,12 +20,12 @@ export default function Home() {
               <main className="relative mx-auto flex max-w-6xl flex-col gap-12 px-6 pb-24 pt-16 md:px-10 lg:px-16">
                   <HeroSection />
                   <GymStatics />
-                  <Training />
-                  <Plans />
-                  <Trainers />
-                  <Reviews />
-                  <Faq />
-                  <Form />
+                  <Training id="programs" />
+                  <Plans id="pricing" />
+                  <Trainers id="Coaches" />
+                  <Reviews id="Reviews" />
+                  <Faq id="faq" />
+                  <Form id="register" />
               </main>
         </div>
         <Footer />

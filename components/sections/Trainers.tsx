@@ -22,9 +22,9 @@ const trainers = [
   },
 ]
 
-const Trainers = () => {
+const Trainers = ({id}) => {
   return (
-     <div className="w-full">
+     <div id={id} className="w-full">
       <div className="space-y-8 md:space-y-12">
         <div className="text-center space-y-4 md:space-y-6">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-orange-300 md:text-base">

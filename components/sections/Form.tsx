@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 
-const Form = () => {
+const Form = ({id}) => {
 
   const [formData, setFormData] = useState({
     name: '',
@@ -23,7 +23,7 @@ const Form = () => {
 
   return (
     <>
-    <div className="w-full">
+    <div id={id} className="w-full">
         <div className="flex flex-col gap-8 lg:flex-row lg:gap-12">
             {/* Left Side box */}
                 <div className="space-y-6 flex flex-col justify-center lg:w-1/2">

@@ -25,12 +25,12 @@ const FAQ = [
   },
 ]
 
-const Faq = () => {
+const Faq = ({id}) => {
 
     const [open , setOpen] = useState(null);
 
   return (
-    <div className="w-full">
+    <div id={id} className="w-full">
         <div className="space-y-6 rounded-3xl border border-white/10 bg-black/60 p-6 md:p-8 lg:p-10">
             <p className="text-sm font-semibold tracking-[0.3em] text-orange-300 md:text-base">
                 FAQS
