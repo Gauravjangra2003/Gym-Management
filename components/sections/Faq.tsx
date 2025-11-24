@@ -25,7 +25,12 @@ const FAQ = [
   },
 ]
 
-const Faq = ({id}) => {
+interface sectionprops {
+    id: string;
+}
+
+
+const Faq = ({id} : sectionprops) => {
 
     const [open , setOpen] = useState(null);
 

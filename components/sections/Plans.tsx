@@ -67,7 +67,12 @@ const pricingPlans = {
   ],
 };
 
-export default function PricingSection({id}) {
+interface sectionprops {
+    id: string;
+}
+
+
+export default function PricingSection({id} : sectionprops) {
   const [switchPlan, setSwitchPlan] = useState("monthly");
 
 //   console.log('rendering')

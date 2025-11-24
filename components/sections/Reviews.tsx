@@ -22,7 +22,12 @@ const Review = [
   },
 ]
 
-const Reviews = ({id}) => {
+interface sectionprops {
+    id: string;
+}
+
+
+const Reviews = ({id} : sectionprops) => {
   return (
     <div id={id} className="w-full">
       <div className="space-y-8 md:space-y-12">

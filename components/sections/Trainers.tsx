@@ -22,7 +22,12 @@ const trainers = [
   },
 ]
 
-const Trainers = ({id}) => {
+interface sectionprops {
+    id: string;
+}
+
+
+const Trainers = ({id} : sectionprops) => {
   return (
      <div id={id} className="w-full">
       <div className="space-y-8 md:space-y-12">

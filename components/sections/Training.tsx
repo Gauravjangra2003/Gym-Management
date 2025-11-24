@@ -47,7 +47,11 @@ const programs = [
   },
 ];
 
-const Training = ({id}) => {
+interface sectionprops {
+    id: string;
+}
+
+const Training = ({id} : sectionprops) => {
 
     const [active, setactive] = useState(0);
 

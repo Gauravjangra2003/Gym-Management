@@ -1,7 +1,12 @@
 'use client';
 import { useState } from 'react';
 
-const Form = ({id}) => {
+interface sectionprops {
+    id: string;
+}
+
+
+const Form = ({id} : sectionprops) => {
 
   const [formData, setFormData] = useState({
     name: '',
@@ -20,6 +25,7 @@ const Form = ({id}) => {
   const handleChange = (field, value) => {
     setFormData({ ...formData, [field]: value });
   };
+
 
   return (
     <>
