@@ -16,13 +16,13 @@ const Form = ({id} : sectionprops) => {
   });
   const [showModal, setShowModal] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setShowModal(true);
     setFormData({ name: '', email: '', phone: '', goal: '' });
   };
 
-  const handleChange = (field, value) => {
+  const handleChange = (field:string, value:string) => {
     setFormData({ ...formData, [field]: value });
   };
 
