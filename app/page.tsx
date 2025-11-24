@@ -4,6 +4,7 @@ import Faq from "@/components/sections/Faq";
 import GymStatics from "@/components/sections/GymStatics";
 import HeroSection from "@/components/sections/HeroSection";
 import Plans from "@/components/sections/Plans";
+import Reviews from "@/components/sections/Reviews";
 // import Trainers from "@/components/sections/Trainers";
 import Training from "@/components/sections/Training";
 
@@ -21,6 +22,7 @@ export default function Home() {
                   <Training />
                   <Plans />
                   {/* <Trainers /> */}
+                  <Reviews />
                   <Faq />
               </main>
         </div>
