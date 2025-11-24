@@ -116,7 +116,7 @@ const Form = ({id} : sectionprops) => {
                   value={formData.goal}
                   onChange={(e) => handleChange('goal', e.target.value)}
                   placeholder="What's your primary fitness goal?"
-                  rows="4"
+                  rows={4}
                   className="w-full rounded-xl border-0 bg-white/5 px-5 py-4 text-white placeholder:text-zinc-500 outline-none focus:bg-white/10 focus:ring-2 focus:ring-orange-500/50 transition-all resize-none"
                   />
               </div>
