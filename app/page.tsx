@@ -16,7 +16,7 @@ export default function Home() {
     <div className="min-h-screen text-white">
       <Header />
         <div className="relative overflow-hidden">
-            <div className="absolute inset-0 bg-zinc-700" />
+            <div className="absolute inset-0 bg-slate-800" />
               <main className="relative mx-auto flex max-w-6xl flex-col gap-12 px-6 pb-24 pt-16 md:px-10 lg:px-16">
                   <HeroSection />
                   <GymStatics />
