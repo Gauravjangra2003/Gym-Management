@@ -32,7 +32,7 @@ interface sectionprops {
 
 const Faq = ({id} : sectionprops) => {
 
-    const [open , setOpen] = useState(null);
+    const [open , setOpen] = useState<number | null>(null);
 
   return (
     <div id={id} className="w-full">
